@@ -2,6 +2,22 @@
 
 Project used for deploying contracts
 
+# For development (Prerequisites)
+- Node `v20.11.1`
+- NPM `10.2.4`
+- Installed `Solidity` (and Hardhat) extension for VS Code made by Nomic Foundation (`v0.7.3`)
+- Install the Hardhat for Visual Studio Code extension?
+- run `npm i` to install the dependencies
+- `npx hardhat --version` - `2.22.2`
+
+# Hardhat basics
+- Hardhat is designed around the concepts of `tasks` and `plugins`. 
+- Every time you're running Hardhat from the command-line, you're running a `task`. Ex. `npx hardhat compile` is running the `compile`task.
+- Help & explore: `npx hardhat help [task]`
+- Recommended plugin, by Hardhat `@nomicfoundation/hardhat-toolbox`. It has everything you need for developing smart contracts.
+- COMPILE: `1npx hardhat compile` - The compile task is one of the built-in tasks. It compiles all the contracts in contracts dir.
+- TESTS: `npx hardhat test` - Keep in mind that when you run npx hardhat test, your contracts will be automatically compiled if they've changed since the last time you ran your tests.
+
 ## Issues
 1.  Property 'deployments' does not exist on type 'HardhatRuntimeEnvironment'.
 Property 'getNamedAccounts' does not exist on type 'HardhatRuntimeEnvironment'.
